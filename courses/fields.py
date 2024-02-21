@@ -22,7 +22,7 @@ class Orderfield(models.PositiveBigIntegerField):
                     qs = qs.filter(**query)
                 # get the order of the last item
                 last_item = qs.latest(self.attname)
-                vaule = last_item.order + 1
+                value = last_item.order + 1
             except ObjectDoesNotExist:
                 value = 0
             setattr(model_instance, self.attname, value)

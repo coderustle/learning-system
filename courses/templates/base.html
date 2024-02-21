@@ -12,7 +12,7 @@
     <div id="header">
       <a href="/" class="logo">Educa</a>
       <ul class="menu">
-        {% if request.user.is.authenticated %}
+        {% if request.user.is_authenticated %}
           <li>
             <a href="{% url "logout" %}">Sign out</a>
           </li>
@@ -29,7 +29,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
         // Dom Loaded
-        {% lbock domready %}
+        {% block domready %}
         {% endblock %}
       })
     </script>
