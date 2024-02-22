@@ -1,2 +1,9 @@
 Django
 Pillow
+django-braces
+Pillow
+django-embed-video
+pymemcache
+django-debug-toolbar
+redis
+django-redisboard
