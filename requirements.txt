@@ -7,3 +7,4 @@ pymemcache
 django-debug-toolbar
 redis
 django-redisboard
+python-dotenv
